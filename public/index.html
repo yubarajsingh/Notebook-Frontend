@@ -12,21 +12,55 @@
 
 <body class="m-0 p-0 box-border font-body text-base">
     <div class="max-w-screen-2xl bg-white-900 w-auto">
-        <header class="flex justify-end items-center text-base my-px mx-2 h-14 text-gray-800 ">
-            <img class="mr-auto" src="images/dm.png" alt="logo" width="25px">
-            <nav class="flex">
-                <ul class="flex">
-                    <li class="inline-block list-none px-6"><a class="text-gray-800 capitalize" href="#">explore</a></li>
-                    <li class="inline-block list-none px-6"><a class="text-gray-800 capitalize" href="#">resoure</a></li>
-                    <li class="inline-block list-none px-6"> 
-                      <input class="w-40 h-10 rounded-sm p-3 outline-none border-solid  border border-indigo-500 placeholder-gray-600::placeholder" type="text" placeholder="search"> 
-                      <a class="py-2 px-4 rounded-sm border-gray-600 border border-solid bg-indigo-600  text-lg text-indigo-100" href="#">Search</a>
-                    </li>
-                </ul>
-            </nav>
-            <a class=" py-2 px-4 rounded-sm border-gray-600 border border-solid  font-normal text-lg" href="#">Sign In</a>
-            <a class="py-2 px-4 rounded-sm  flex flex-row justify-around items-center bg-indigo-600 text-indigo-100 text-lg ml-4 border-solid border border-blue-500" href="#">Sign Up<i class=" pl-1 fas fa-arrow-right"></i></a>
-        </header>
+  <!-- navbar goes here -->
+<nav class="bg-gray-100">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex justify-between">
+  
+        <div class="flex space-x-4 ">
+          <!-- logo -->
+          <div>
+            <a href="#" class="flex items-center py-5 px-2 text-gray-700 hover:text-gray-900">
+              <svg class="h-6 w-6 mr-1 text-blue-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+              </svg>
+              <span class="font-bold">LOGO HERE</span>
+            </a>
+          </div>
+  
+          <!-- primary nav -->
+          <div class="hidden md:flex items-center space-x-1">
+            <a href="#" class="py-5 px-3  text-gray-700 hover:text-gray-900 capitalize">Explore</a>
+            <a href="#" class="py-5 px-3 text-gray-700 hover:text-gray-900 capitalize">New notes</a>
+           <input class="w-40 h-10 rounded-sm p-3 outline-none border-solid  border border-indigo-500 placeholder-gray-600::placeholder" type="text" placeholder="Search">
+            <a href="" class="py-2 px-4 rounded-sm border-gray-600 border border-solid bg-indigo-600 text-lg text-indigo-100">Search</a>
+          </div>
+        </div>
+  
+        <!-- secondary nav -->
+        <div class="hidden md:flex items-center space-x-1">
+          <a href="" class=" py-2 px-6 rounded-sm border-gray-600 border border-solid text-lg" >Login</a>
+          <a href="" class="py-2 px-6 rounded-sm border-gray-600 border border-solid bg-indigo-600 text-lg  text-indigo-100 transition duration-300">Signup<i class=" pl-2 fas fa-arrow-right"></i></a>
+        </div>
+  
+        <!-- mobile button goes here -->
+        <div class="md:hidden flex items-center">
+          <button class="mobile-menu-button">
+            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+  
+      </div>
+    </div>
+  
+    <!-- mobile menu -->
+    <div class="mobile-menu hidden md:hidden">
+      <a href="#" class="block py-2 px-4 text-sm hover:bg-gray-200">Explore</a>
+      <a href="#" class="block py-2 px-4 text-sm hover:bg-gray-200">New Notes</a>
+    </div>
+  </nav>
         <!-- body section -->
         <section  class="grid md:grid-cols-2 grid-cols-1 mt-5" id="hero-section">
 
